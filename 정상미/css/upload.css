@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Notosans';
+    src: url('/SW-BankProject/font/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotosansB';
+    src: url('/SW-BankProject/font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotosansL';
+    src: url('/SW-BankProject/font/NotoSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ReemKufiFun';
+    src: url('/SW-BankProject/font/ReemKufiFun-Regular.ttf') format('truetype');
+}
+
+.imgupload {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.writeupload {
+    width: 60%;
+}
+
+.container {
+    width: 350px;
+    height: 600px;
+    background: #FFDA58;
+}
+
+.twotext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.h11 {
+    color: #000;
+    font-family: "NotosansB";
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 122%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.h22 {
+    color: #000;
+    font-family: "NotosansL";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 122%;
+}
+
+.incontainer {
+    width: 300px;
+    height: 440px;
+    border: 1px solid #FFF;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(3px 9px 21.7px rgba(0, 0, 0, 0.21));
+}
+
+.inincontainer {
+    width: 270px;
+    height: 260px;
+    border-radius: 15px;
+    border: 1px solid #D3D3D3;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#title {
+    border-radius: 50px;
+    border: 1px solid #D3D3D3;
+    background: linear-gradient(0deg, #306C1B 0%, #306C1B 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+    padding-left: 12px;
+    width: 110px;
+    height: 35px;
+    margin-right: 130px;
+    color: #FFF;
+    font-family: "NotosansL";
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#title:focus {
+    outline: none;
+}
+
+.incontainertext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomtext {
+    color: #000;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "NotosansB";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 122%;
+    margin: 0;
+}
+
+.accent {
+    color: #306C1B;
+    font-family: "NotosansB";
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 122%;
+}
+
+.arrow {
+    stroke-width: 1px;
+    stroke: #FFF;
+    margin-left: 250px;
+    margin-bottom: 10px;
+}
