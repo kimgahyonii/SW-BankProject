@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'NotosansR';
+    src: url('/SW-BankProject/정상미/font/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotosansB';
+    src: url('/SW-BankProject/정상미/font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ReemKufiFunR';
+    src: url('/SW-BankProject/font/ReemKufiFun-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ReemKufiFunB';
+    src: url('/SW-BankProject/font/ReemKufiFun-Bold.ttf') format('truetype');
+}
+
+nav {
+    display: flex;
+}
+
+.logo > p {
+    color: #353535;
+    font-family: "ReemKufiFunB";
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -2.7px;
+    margin-top: 4px;
+}
+
+svg.localbanklogo {
+    margin-left: 20px;
+    margin-top: 9px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 45px;
+    margin: -40px 0 0 370px;
+}
+
+.menu > p {
+    color: #353535;
+    font-family: "NotosansR";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1.2px;
+}
+
+.currentmenu {
+    color: #F4C53C !important;
+}
