@@ -18,8 +18,13 @@
     src: url('/SW-BankProject/font/ReemKufiFun-Regular.ttf') format('truetype');
 }
 
+.upload {
+    display: flex;
+}
+
+
 .imgupload {
-    width: 40%;
+    margin-left: 200px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -133,4 +138,46 @@
     stroke: #FFF;
     margin-left: 250px;
     margin-bottom: 10px;
+}
+
+.writeupload {
+    color: #000;
+    font-family: "NotosansB";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-left: 700px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+#text1, #text2 {
+    width: 600px;
+    height: 30px;
+}
+
+#text3 {
+    width: 600px;
+    height: 150px;
+}
+
+#text1, #text2, #text3 {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    font-family: "Notosans";
+    outline: none;
+    padding-left: 10px;
+}
+
+#uploadbutton {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Notosans";
+    background: #306C1B;
+    border: none;
+    width: 170px;
+    height: 38px;
+    margin-top: 30px;
+    margin-left: 230px;
 }
