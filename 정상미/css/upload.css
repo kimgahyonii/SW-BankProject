@@ -99,8 +99,8 @@
     height: 35px;
     margin-right: 130px;
     color: #FFF;
-    font-family: "NotosansL";
-    font-size: 12px;
+    font-family: "NotosansB";
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
@@ -160,6 +160,8 @@
 #text3 {
     width: 600px;
     height: 150px;
+    resize: none;
+    padding-top: 10px;
 }
 
 #text1, #text2, #text3 {
