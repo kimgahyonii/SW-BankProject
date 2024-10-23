@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    height: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* padding: 20px; */
+    height: 100vh;
+    /* text-align: center; */
+    /* height: 100vh; */
+    /* 한 화면을 차지하도록 설정 */
+}
+
+#coin_bank_title {
+    /* margin-top: 56px; */
+    margin-bottom: 7px;
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+#coin_bank_subtitle {
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+#coin_bank {
+    height: 60vh;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.coin_container {
+    position: relative;
+    width: 400px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_coin {
+    position: absolute;
+    text-align: center;
+}
+
+#my_coin_text {
+    /* position: absolute; */
+    top: 58%;
+    left: 47%;
+    font-size: 18px;
+    justify-content: center;
+
+}
+
+#my_coin {
+    top: 61%;
+    left: 45.3%;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.my_coin h1 {
+    margin-bottom: 10px;
+}
+
+.my_coin h2 {
+    margin: 0;
+}
+
+#my_post {
+    background: #E4E3E1;
+    width: 100%;
+    height: auto;
+    /* flexbox 유지 */
+    display: flex;
+    align-items: flex-start;
+    /* padding-left: 50; */
+
+    box-sizing: border-box;
+    padding: 50px 100px 100px;
+
+
+}
+
+.fake_button {
+
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    margin-left: 8px;
+    /* padding-left: 10px; */
+    background-color: #306C1B;
+    width: 60px;
+    height: 25px;
+    border-radius: 50px;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* vertical-align: midd; */
+    display: inline-flex;
+
+}
+
+.post_card_img {
+    /* margin-bottom: 10px; */
+    width: 270px;
+    height: 285px;
+    flex-shrink: 0;
+}
+
+.local_food_info_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.post_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.post_card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    height: 380px;
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+img.post_card_icon {
+
+    width: 24px;
+    height: 24px;
+    /* margin-left: 400px; */
+    /* margin-top: 30px; */
+
+}
+
+.post_wrapper {
+    flex-direction: row;
+}
+
+.local_food_info {
+    line-height: 1.5;
+    color: #010101;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-left: 6px;
+    margin-top: 10px;
+    /* white-space: nowrap; */
+
+    /* 27.5px */
+
+}
+
+
+.local_food_menu_name {
+    color: #306C1B;
+    font-family: "Noto Sans KR";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-left: 4px;
+    margin-top: 5px;
+
+}
+
+.post_text {
+    margin-top: 8px;
+    flex: 1;
+    /* margin-left: 5px; */
+}
+
+#coin_bank_img {
+    margin-top: 40px;
+    width: 400px;
+    height: 270px;
+    flex-shrink: 0;
+}
+
+#coin_bank_title,
+#coin_bank_subtitle,
+#coin_bank_img,
+#my_post_title,
+#my_post_subtitle {
+    display: block;
+
+}
+
+#my_post_title {
+    color: #383838;
+    font-family: "Noto Sans KR";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 10px;
+    text-align: left;
+    margin-bottom: 0;
+
+
+    /* margin-top: 54px; */
+}
+
+#my_post_subtitle {
+    text-align: left;
+    margin-top: 0;
+    color: #000;
+    font-family: "Noto Sans KR";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 35px;
+}
