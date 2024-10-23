@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Notosans';
+    src: url('/SW-BankProject/font/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ReemKufiFun';
+    src: url('/SW-BankProject/font/ReemKufiFun-Regular.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    position: relative;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.logo > p {
+    color: #353535;
+    font-family: "ReemKufiFun";
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -2.7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+svg.localbanklogo {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 45px;
+    margin-left: 380px;
+    margin-top: -3px;
+}
+
+.menu > p {
+    color: #353535;
+    font-family: "Notosans";
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+}
+
+.menu > p:hover {
+    color: #F4C53C;
+    cursor: pointer;
+}
