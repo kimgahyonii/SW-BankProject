@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'Noto sans KR-R';
+    src: url('/font/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto sans KR-B';
+    src: url('/SW-BankProject/font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto sans KR-L';
+    src: url('/font/NotoSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ReemKufiFun';
+    src: url('/font/ReemKufiFun-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Noto Sans KR-B', sans-serif;
+    font-weight: 400;
+    /* Change this as needed based on your design */
+    line-height: 1.6;
+    /* Optional: To improve readability */
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +35,15 @@
 
 #nav {
     height: 20px;
+}
+
+#coin_bank {
+    margin-top: 50px;
+}
+
+.post_card,
+.post_card_img {
+    filter: drop-shadow(2px 7px 15.7px rgba(0, 0, 0, 0.10));
 }
 
 section {
@@ -19,21 +58,56 @@ section {
     /* 한 화면을 차지하도록 설정 */
 }
 
+
+
+#upload_btn_img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 15px;
+    width: 230px;
+    height: 70px;
+    background-color: #fff;
+    font-weight: 600;
+    font-family: 'Noto Sans KR-B', sans-serif;
+    /* 원하는 색상 */
+    color: black;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    /* 페이지 내 다른 요소 위에 표시되도록 */
+}
+
+
 #coin_bank_title {
     /* margin-top: 56px; */
     margin-bottom: 7px;
     color: #000;
     text-align: center;
-    font-family: "Noto Sans KR";
+    font-family: 'Noto Sans KR-B', sans-serif;
+    /* 제목에도 NotoSansKR 적용 */
+    font-weight: 900;
     font-size: 40px;
     font-style: normal;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: normal;
 }
 
 #coin_bank_subtitle {
     margin-top: 7px;
     font-size: 20px;
+    font-family: 'Noto Sans KR-L';
 }
 
 #coin_bank {
@@ -60,8 +134,8 @@ section {
 
 #my_coin_text {
     /* position: absolute; */
-    top: 58%;
-    left: 47%;
+    top: 55%;
+    left: 47.5%;
     font-size: 18px;
     justify-content: center;
 
@@ -69,7 +143,7 @@ section {
 
 #my_coin {
     top: 61%;
-    left: 45.3%;
+    left: 46%;
     font-size: 38px;
     font-weight: 900;
 }
@@ -97,31 +171,47 @@ section {
 
 }
 
-.fake_button {
 
+.fake_button {
+    font-family: 'Noto Sans KR-L', sans-serif;
+    margin-top: 295px;
+    margin-right: 190px;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #fff;
+    width: 23%;
+    height: 23px;
+    flex-shrink: 0;
 
-    margin-left: 8px;
-    /* padding-left: 10px; */
+
     background-color: #306C1B;
-    width: 60px;
-    height: 25px;
+
+
+    padding: 2px 5px;
     border-radius: 50px;
-    /* text-align: center; */
-    /* align-items: center; */
-    /* vertical-align: midd; */
+    padding-bottom: 5px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+
     display: inline-flex;
 
 }
 
 .post_card_img {
-    /* margin-bottom: 10px; */
-    width: 270px;
-    height: 285px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    /* 중앙에서 살짝 왼쪽으로 이동 (50%가 중앙, 추가 10% 왼쪽 이동) */
+    width: 290px;
+    height: 300px;
     flex-shrink: 0;
+
 }
+
 
 .local_food_info_wrapper {
     display: flex;
@@ -137,6 +227,9 @@ section {
 }
 
 .post_card {
+    position: relative;
+    justify-content: center;
+    /* align-items: center; */
     background-color: white;
     border: 1px solid #ddd;
     padding: 20px;
@@ -151,45 +244,43 @@ img.post_card_icon {
 
     width: 24px;
     height: 24px;
-    /* margin-left: 400px; */
-    /* margin-top: 30px; */
+
 
 }
 
 .post_wrapper {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .local_food_info {
-    line-height: 1.5;
-    color: #010101;
+
+    margin-top: 4px;
+    color: #000;
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #FFF;
-    font-family: "Noto Sans KR";
-    font-size: 18px;
-    font-style: normal;
+    font-family: "Noto sans KR-B";
+    font-size: 16px;
     font-weight: 700;
-    line-height: 110%;
-    margin-left: 6px;
-    margin-top: 10px;
-    /* white-space: nowrap; */
+    line-height: 122%;
+    margin-left: 5px;
 
-    /* 27.5px */
 
 }
 
-
-.local_food_menu_name {
+.post_text_wrapper>.local_food_menu_name {
     color: #306C1B;
-    font-family: "Noto Sans KR";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
     margin-left: 4px;
     margin-top: 5px;
+    font-family: "Noto sans KR-B";
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 122%;
 
 }
+
 
 .post_text {
     margin-top: 8px;
@@ -215,7 +306,7 @@ img.post_card_icon {
 
 #my_post_title {
     color: #383838;
-    font-family: "Noto Sans KR";
+    /* font-family: "Noto Sans KR"; */
     font-size: 30px;
     font-style: normal;
     font-weight: 900;
@@ -232,10 +323,11 @@ img.post_card_icon {
     text-align: left;
     margin-top: 0;
     color: #000;
-    font-family: "Noto Sans KR";
+    /* font-family: "Noto Sans KR"; */
     font-size: 19px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    margin-top: 10px;
     margin-bottom: 35px;
 }
