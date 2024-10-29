@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'Notosans';
+    src: url('/font/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotosansB';
+    src: url('/font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NotosansL';
+    src: url('/font/NotoSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ReemKufiFun';
+    src: url('/font/ReemKufiFun-Regular.ttf') format('truetype');
+}
+
+#file-input {
+    display: none;
+}
+
+.upload {
+    display: flex;
+}
+
+/* 업로드한 이미지 스타일 */
+.inincontainer img.uploaded {
+    width: 100%;
+    /* 컨테이너의 너비에 맞춰 이미지 조정 */
+    height: 100%;
+    /* 컨테이너의 높이에 맞춰 이미지 조정 */
+    object-fit: cover;
+    /* 비율을 유지하며 이미지 크기 조정 */
+    position: absolute;
+    /* 부모 요소에 대해 절대 위치 설정 */
+    top: 0;
+    /* 부모의 맨 위 */
+    left: 0;
+    /* 부모의 맨 왼쪽 */
+}
+
+#image-button {
+    cursor: pointer;
+    /* 이미지에 커서 포인터 추가 */
+}
+
+.inincontainer>img {
+    width: 30px;
+    height: 30px;
+}
+
+.imgupload {
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.writeupload {
+    width: 60%;
+}
+
+.container {
+    width: 350px;
+    height: 600px;
+    background: #FFDA58;
+}
+
+.twotext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.h11 {
+    color: #000;
+    font-family: "NotosansB";
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 122%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.h22 {
+    color: #000;
+    font-family: "NotosansL";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 122%;
+}
+
+.incontainer {
+    width: 300px;
+    height: 440px;
+    border: 1px solid #FFF;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    filter: drop-shadow(3px 9px 21.7px rgba(0, 0, 0, 0.21));
+    position: relative;
+    /* 필요에 따라 설정 */
+    z-index: 1;
+    /* 입력 필드가 가려지지 않도록 */
+}
+
+.inincontainer {
+    width: 270px;
+    height: 260px;
+    border-radius: 15px;
+    border: 1px solid #D3D3D3;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#title {
+    border-radius: 50px;
+    border: 1px solid #D3D3D3;
+    background: linear-gradient(0deg, #306C1B 0%, #306C1B 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 110px;
+    height: 35px;
+    margin-left: -131px;
+    color: #FFF;
+    font-family: "NotosansB";
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#title:focus {
+    outline: none;
+}
+
+.incontainertext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomtext {
+    color: #000;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "NotosansB";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 122%;
+    margin: 0;
+}
+
+.accent {
+    color: #306C1B;
+    font-family: "NotosansB";
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 122%;
+}
+
+.arrow {
+    stroke-width: 1px;
+    stroke: #FFF;
+    margin-left: 250px;
+    margin-top: -40px;
+    /* margin-bottom: 120px; */
+}
+
+.writeupload {
+    color: #000;
+    font-family: "NotosansB";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-left: 700px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+#text1,
+#text2 {
+    width: 600px;
+    height: 30px;
+}
+
+#text3 {
+    width: 600px;
+    height: 150px;
+    resize: none;
+    padding-top: 10px;
+}
+
+#text1,
+#text2,
+#text3 {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    font-family: "Notosans";
+    outline: none;
+    padding-left: 10px;
+}
+
+#uploadbutton {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Notosans";
+    background: #306C1B;
+    border: none;
+    width: 170px;
+    height: 38px;
+    margin-top: 30px;
+    margin-left: 230px;
+}
+
+/* #input-field {
+    width: 90%;
+    background: #FAFAFA;
+    margin: 10px 0 10px 10px;
+    height: 40px; 
+    border: none;
+    box-sizing: border-box;
+    padding-right: 10px;
+    font-size: 18px;
+    font-family: 'Notosans';
+} */
+
+.placeholder {
+    position: absolute;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    height: 30px;
+    display: flex;
+    z-index: 1;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholder span {
+    display: block;
+}
+
+.first {
+    margin-top: -40px;
+}
+
+.concon {
+    display: flex;
+    background: #FAFAFA;
+    position: relative;
+    width: 250px;
+    margin-left: -30px;
+}
+
+.placeholder>img {
+    position: relative;
+    z-index: 1;
+    margin-top: 18px;
+    margin-left: -10px;
+    width: 20px;
+    height: 40px;
+
+}
+
+#input-field1 {
+    position: relative;
+    color: #000;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "NotosansB";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 122%;
+    /* 26.84px */
+    background-color: transparent;
+    z-index: 3;
+    outline: transparent;
+    border: transparent;
+    pointer-events: auto;
+}
+
+#input-field1::placeholder {
+    color: #000;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "NotosansB";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 122%;
+    /* 26.84px */
+    outline: transparent;
+    border: transparent;
+}
+
+#input-field2 {
+    pointer-events: auto;
+    position: relative;
+    color: #306C1B;
+    z-index: 3;
+    font-family: "NotosansB";
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 122%;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    outline: transparent;
+    border: transparent;
+    background-color: transparent;
+}
+
+#input-field2::placeholder {
+    color: #306C1B;
+    font-family: "NotosansB";
+    font-size: 21px;
+    font-weight: 900;
+    line-height: 122%;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    outline: transparent;
+    border: transparent;
+    background-color: transparent;
+}
+
+#화살표 {
+    right: 5px;
+}
