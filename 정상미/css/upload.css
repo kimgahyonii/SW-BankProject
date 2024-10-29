@@ -1,16 +1,22 @@
 @font-face {
     font-family: 'Notosans';
     src: url('/font/NotoSansKR-Regular.ttf') format('truetype');
+    src: url('/SW-BankProject/font/NotoSansKR-Regular.ttf') format('truetype');
+
 }
 
 @font-face {
     font-family: 'NotosansB';
     src: url('/font/NotoSansKR-Bold.ttf') format('truetype');
+    src: url('/SW-BankProject/font/NotoSansKR-Bold.ttf') format('truetype');
+
 }
 
 @font-face {
     font-family: 'NotosansL';
     src: url('/font/NotoSansKR-Light.ttf') format('truetype');
+    src: url('/SW-BankProject/font/NotoSansKR-Light.ttf') format('truetype');
+
 }
 
 @font-face {
@@ -20,11 +26,15 @@
 
 #file-input {
     display: none;
+    src: url('/SW-BankProject/font/ReemKufiFun-Regular.ttf') format('truetype');
+
 }
 
 .upload {
     display: flex;
 }
+
+
 
 /* 업로드한 이미지 스타일 */
 .inincontainer img.uploaded {
@@ -102,12 +112,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     /* justify-content: center; */
     filter: drop-shadow(3px 9px 21.7px rgba(0, 0, 0, 0.21));
     position: relative;
     /* 필요에 따라 설정 */
     z-index: 1;
     /* 입력 필드가 가려지지 않도록 */
+    justify-content: center;
+    filter: drop-shadow(3px 9px 21.7px rgba(0, 0, 0, 0.21));
+
 }
 
 .inincontainer {
@@ -122,6 +136,8 @@
     margin-top: 10px;
     margin-bottom: 20px;
     position: relative;
+    margin-bottom: 10px;
+
 }
 
 #title {
@@ -137,6 +153,14 @@
     font-family: "NotosansB";
     font-size: 14px;
     margin-bottom: 30px;
+    width: 110px;
+    height: 35px;
+    margin-right: 130px;
+    color: #FFF;
+    font-family: "NotosansB";
+    font-size: 14px;
+    margin-bottom: 10px;
+
 }
 
 #title:focus {
@@ -155,6 +179,7 @@
     -webkit-text-stroke-color: #FFF;
     font-family: "NotosansB";
     font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 122%;
     margin: 0;
@@ -164,6 +189,7 @@
     color: #306C1B;
     font-family: "NotosansB";
     font-size: 20px;
+    font-size: 24px;
     font-weight: 900;
     line-height: 122%;
 }
@@ -174,6 +200,8 @@
     margin-left: 250px;
     margin-top: -40px;
     /* margin-bottom: 120px; */
+    margin-bottom: 10px;
+
 }
 
 .writeupload {
@@ -187,6 +215,8 @@
     display: flex;
     flex-direction: column;
 }
+
+
 
 #text1,
 #text2 {
@@ -221,6 +251,7 @@
     height: 38px;
     margin-top: 30px;
     margin-left: 230px;
+
 }
 
 /* #input-field {

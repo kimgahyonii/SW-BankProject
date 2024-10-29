@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/nav.css">
-    <link rel="stylesheet" href="/정상미/css/upload.css">
-    <script src="/정상미/js/script.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="/SW-BankProject/정상미/css/upload.css">
     <title>게시물 업로드</title>
 </head>
 
@@ -27,78 +26,12 @@
         </div>
         <div class="menu">
             <p onclick="location.href='/limso/MainPage1.html'">추천한끼</p>
-            <p onclick="location.href='/김가현 mypage/meal_posts.html'">한끼밥상</p>
+            <p onclick="location.href='/김가현_mypage/meal_posts.html'">한끼밥상</p>
             <p onclick="location.href='/정상미/html/upload.html'" class="currentmenu">게시하기</p>
-            <p onclick="location.href='/김가현 mypage/index.html'">내 저금통</p>
+            <p onclick="location.href='/김가현_mypage/index.html'">내 저금통</p>
         </div>
 
     </nav>
-
-    <main class="upload">
-        <div class="imgupload">
-            <div class="container">
-                <div class="twotext">
-                    <p class="h11">업로드할 게시물을<br>만들어주세요</p>
-                    <p class="h22">이미지를 업로드하고, 로컬푸드 음식과 지역,<br>요리 이름을 작성해주세요.</p>
-                </div>
-                <div class="incontainertext">
-                    <div class="incontainer">
-                        <div class="inincontainer">
-                            <img src="/김가현 mypage/images/img.png" alt="Upload Image" id="image-button">
-                            <!-- 파일 입력 요소 추가 -->
-                            <input type="file" id="file-input" style="display: none;">
-                        </div>
-                        <input type="text" id="title" placeholder=" ">
-                        <div class="concon">
-                            <div class="placeholder">
-                                <div class="field">
-                                    <input type="text" id="input-field1" placeholder="로컬푸드 음식과 지역 한줄 설명과">
-                                    <input type="text" id="input-field2" placeholder="요리 이름을 적어주세요">
-                                </div>
-                                <!-- <span class="first bottomtext">로컬푸드 음식과 지역 한줄 설명과</span>
-                                    <span class="second accent">요리 이름을 적어주세요</span> -->
-                                <img src="/김가현 mypage/images/chevron-right.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="writeupload">
-            <p>한끼 밥상에 사용한 로컬푸드</p>
-            <input type="text" id="text1">
-            <p>어느 지역의 로컬푸드인가요?</p>
-            <input type="text" id="text2">
-            <p>더보기에 적을 글을 작성해주세요</p>
-            <textarea id="text3" cols="30" rows="10"></textarea>
-            <a href="/김가현 mypage/index.html#my_post"><input type=" button" id="uploadbutton" value="게시하기"></a>
-        </div>
-    </main>
-
-    <script>
-        // 이미지 버튼을 클릭하면 파일 입력 클릭 이벤트 발생
-        document.getElementById('image-button').addEventListener('click', function () {
-            document.getElementById('file-input').click();
-        });
-
-        // 파일 선택 시 이미지 미리보기
-        document.getElementById('file-input').addEventListener('change', function () {
-            const file = this.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    const img = document.createElement('img');
-                    img.src = e.target.result;
-                    img.classList.add('uploaded'); // 'uploaded' 클래스를 추가하여 스타일 적용
-
-                    const inContainer = document.querySelector('.inincontainer');
-                    inContainer.innerHTML = ''; // 기존 이미지를 삭제
-                    inContainer.appendChild(img); // 새 이미지를 추가
-                }
-                reader.readAsDataURL(file);
-            }
-        });
-    </script>
 </body>
 
 </html>
