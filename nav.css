@@ -52,6 +52,7 @@ svg.localbanklogo {
     align-items: center;
     column-gap: 45px;
     margin-left: 400px;
+    /* margin left를 통일합니다. 필요에 따라 조정하세요. */
     margin-top: -3px;
 }
 
