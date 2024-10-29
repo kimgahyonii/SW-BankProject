@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    width: 417px;
+    height: 589.88px;
+    position: absolute;
+    background: #FAFAFA;
+    border: 1px rgba(0, 0, 0, 0.20) solid;
+}
+
+.image {
+    width: 350.98px;
+    height: 390.21px;
+    position: absolute;
+    left: 36.31px;
+    top: 22.82px;
+    background: linear-gradient(0deg, white 0%, white 100%);
+    box-shadow: 2px 2px 8.8px rgba(0, 0, 0, 0.32);
+    border-radius: 15px;
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 126.49px;
+    height: 43.09px;
+    position: absolute;
+    left: 36.14px;
+    top: 435.09px;
+    background: #306C1B;
+    border-radius: 16px;
+    border: 1px white solid;
+}
+
+.pork {
+    color: white;
+    font-size: 18px;
+    font-family: Noto Sans KR;
+    font-weight: 500;
+    line-height: 19.80px;
+    text-align: center;
+}
+
+.explanation-container {
+    position: absolute;
+    left: 36.14px;
+    top: 485.09px;
+}
+
+.explanation {
+    color: black;
+    font-size: 25px;
+    font-family: Noto Sans KR;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.food_name {
+    color: #306C1B;
+    font-size: 30px;
+    font-family: Noto Sans KR;
+    font-weight: 700;
+    line-height: 33px;
+    word-wrap: break-word;
+}
+
+.rotated-box {
+    width: 49.06px;
+    height: 44.01px;
+    position: absolute;
+    left: 355.39px;
+    top: 551.09px;
+    transform: rotate(-180deg);
+    /* 오른쪽으로 90도 더 회전 */
+    transform-origin: 0 0;
+    border: 1px white solid;
+}
+
+.inner-box {
+    width: 39.87px;
+    height: 19.26px;
+    position: absolute;
+    left: 4.60px;
+    top: 12.38px;
+}
