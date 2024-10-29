@@ -1,0 +1,182 @@
+/* 오늘의 추천 로컬푸드 한끼 합상 */
+#main_title {
+    width: 591px;
+    height: 57px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Noto Sans KR";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: -67px;
+    margin-left: 20px;
+}
+
+.main_title {
+    width: 591px;
+    height: 57px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Noto Sans KR";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: -17px;
+    margin-left: 20px;
+}
+
+/* 로컬푸드 강조 */
+.hightlight-main {
+    color: #306C1B;
+    font-family: "Noto Sans KR";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+/* 로컬 푸드 코인을 가장 많이 받았어요: */
+.second_title {
+    width: 611px;
+    height: 37px;
+    flex-shrink: 0;
+    color: rgba(77, 77, 77, 0.52);
+    font-family: "Noto Sans KR";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 27.5px */
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.secondPage_title {
+    color: #000;
+    font-family: "Noto Sans KR";
+    font-size: 30px;
+    font-weight: 900;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.hightlightSecond-main {
+    width: 969px;
+    height: 66px;
+    flex-shrink: 0;
+    color: #030303;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    font-family: "Noto Sans KR";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    display: inline;
+    /* 인라인으로 설정하여 한 줄에 표시 */
+}
+
+/* 버튼 뭉탱이로 묶기 */
+.button-group {
+    display: flex;
+    /* Flexbox 사용 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬 (필요에 따라) */
+    gap: 10px;
+    /* 버튼 사이의 간격 */
+    margin: 0 auto;
+    /* 부모 요소의 자동 마진으로 중앙 정렬 */
+    height: 100vh;
+    /* 뷰포트 높이의 100%로 설정하여 화면의 전체 높이를 차지 */
+}
+
+button.custom-button {
+    width: 304px;
+    height: 94px;
+    flex-shrink: 0;
+    border-radius: 63px;
+    background: #FFF;
+    box-shadow: 6px 4px 18.5px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    /* 텍스트와 이미지를 수직으로 중앙 정렬 */
+    justify-content: space-between;
+    /* 텍스트와 이미지를 양 끝에 배치 */
+    padding: 0 20px;
+    /* 좌우 여백 추가 */
+    position: absolute;
+    margin-top: -277px;
+    margin-left: -208px;
+}
+
+button p {
+    width: auto;
+    /* 자동으로 크기를 설정 */
+    height: auto;
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin: 0;
+    /* 기본 마진 제거 */
+    flex-grow: 1;
+    /* 텍스트가 남은 공간을 차지하도록 설정 */
+}
+
+.custom-button img {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    margin-left: 10px;
+    /* 이미지와 텍스트 사이에 여백 */
+}
+
+.image-container {
+    display: flex;
+    /* Flexbox 사용 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    margin-top: -202px;
+    margin-left: 10px;
+    gap: 10px;
+    /* 이미지 사이의 간격 */
+    position: relative;
+}
+
+
+.button-wrapper {
+    align-self: flex-end;
+    /* 버튼을 오른쪽에 배치 */
+    margin-top: 10px;
+    /* 이미지와 버튼 사이에 여백 */
+}
+
+img {
+    width: 400px;
+    height: 500px;
+}
+
+.post_card1 {
+    margin-top: 202px;
+}
+
+.custom-button2 {
+    margin-top: -197px !important;
+}
+
+.All {
+    display: flex;
+    flex-direction: column;
+}
+
+.chch>img {
+    width: 100%;
+    height: 100%;
+}
