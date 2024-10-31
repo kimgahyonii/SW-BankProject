@@ -1,4 +1,24 @@
 /* meal.css */
+@font-face {
+    font-family: 'Noto sans KR-R';
+    src: url('/font/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto sans KR-B';
+    src: url('/SW-BankProject/font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto sans KR-L';
+    src: url('/font/NotoSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ReemKufiFun';
+    src: url('/font/ReemKufiFun-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,23 +43,34 @@ html {
 }
 
 #title {
-    text-align: center;
-    margin-top: 20px;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 220px;
+}
+
+#title .title,
+#title #green_title {
+    display: inline;
+    /* font-size: 2.5rem; */
+    font-family: 'Noto sans KR-B';
+    font-weight: 1000;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #333;
 }
 
 #green_title {
-    color: #4CAF50;
+    color: #306C1B;
+    font-size: 2.5rem;
+
 }
 
 #meal-container {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .meal-grid {

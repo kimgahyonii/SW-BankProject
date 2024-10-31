@@ -63,39 +63,7 @@
         <a href="/정상미/html/upload.html" class="noto-sans-kr-bold floating-btn">게시물 올리기<img id="upload_btn_img"
                 src="/김가현 mypage/images/Group 22.png" alt=""></a>
     </main>
-    <script>
-        // JSON 데이터를 통해 게시물 추가
-        const mealPosts = [
-            {
-                "img": "/김가현 mypage/images/소고기 덮밥.png",
-                "name": "소고기 덮밥",
-                "description": "횡성 한우로 만든 소고기 덮밥",
-                "type": "한우"
-            },
-            // 추가적인 게시물 데이터를 JSON 형식으로 나열
-        ];
-
-        const mealPostsContainer = document.querySelector('.meal_posts-grid');
-
-        mealPosts.forEach(post => {
-            const postDiv = document.createElement('div');
-            postDiv.className = 'meal_post';
-
-            postDiv.innerHTML = `
-                <img src="${post.img}" alt="${post.name}">
-                <div class="centered-div">
-                    <span class="pork">${post.type}</span>
-                </div>
-                <div class="explanation-container">
-                    <span class="explanation">
-                        ${post.description}<br><span class="food_name">${post.name}</span>
-                    </span>
-                </div>
-            `;
-
-            mealPostsContainer.appendChild(postDiv);
-        });
-    </script>
+    <script src="/김가현_mypage/js/meal_post.js"></script>
 </body>
 
 </html>

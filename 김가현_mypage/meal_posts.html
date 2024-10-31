@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/SW-BankProject/SW-BankProject/nav.css">
+    <link rel="stylesheet" href="/nav.css">
     <link rel="stylesheet" href="css/upload_btn_img.css">
     <link rel="stylesheet" href="css/meal_posts.css">
+    <!-- <link rel="stylesheet" href="/김가현_mypage/css/meal.css"> -->
     <title>한끼 밥상</title>
 </head>
 
@@ -16,22 +17,27 @@
             <div class="logo">
                 <svg class="localbanklogo" xmlns="http://www.w3.org/2000/svg" width="35" height="42" viewBox="0 0 39 46"
                     fill="none">
-                    <!-- SVG Content -->
+                    <path
+                        d="M8.00754 44.2193C7.98391 42.5215 5.96132 39.1453 4.962 38.3178C-0.407034 31.2843 0.673083 27.0183 2.45832 22.8606C6.14555 24.6765 8.96273 25.7044 13.5276 25.3908C20.5167 24.9107 24.5201 18.2715 24.4725 15.7891C24.4344 13.8032 26.6774 12.1515 27.8036 11.5738C28.7077 11.2615 30.6588 10.7401 31.2298 11.1523C31.8009 11.5644 31.6581 12.3856 31.5153 12.7447C30.4494 13.7939 30.5953 16.1795 30.8015 17.2411C33.8851 19.3769 35.4174 22.7211 35.7981 24.1262H37.3685C38.6248 24.2011 38.9706 25.3439 38.9864 25.906V30.5897C39.1387 31.7513 37.9713 32.2915 37.3685 32.4164H35.7981C35.4016 33.8371 33.9898 37.1188 31.5153 38.8799C29.0408 40.641 28.8981 43.6417 29.136 44.9219C29.136 45.8212 28.5015 46.0148 28.1843 45.9991H22.3311C21.3794 45.9991 21.1415 45.281 21.1415 44.9219V43.7978V43.5168C21.1415 43.5168 17.0966 43.6417 16.1924 43.5168V44.9219C16.1924 45.8212 15.3993 46.0148 15.0028 45.9991H9.72066C8.55227 45.9991 8.12586 45.4656 8.01808 44.9833C8.03704 46.3733 8.0268 45.752 8.01469 44.9676C7.9786 44.7956 7.98267 44.6309 8.00754 44.5004C8.00986 44.6531 8.01231 44.8135 8.01469 44.9676C8.01578 44.9729 8.01692 44.9781 8.01808 44.9833C8.01525 44.7756 8.01177 44.523 8.00754 44.2193Z"
+                        fill="#353535" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.6 23.2C18.0065 23.2 23.2 18.0065 23.2 11.6C23.2 5.19349 18.0065 0 11.6 0C5.19349 0 0 5.19349 0 11.6C0 18.0065 5.19349 23.2 11.6 23.2ZM7.70101 5.494C7.70101 4.74192 8.31069 4.13224 9.06277 4.13224C9.81485 4.13224 10.4245 4.74192 10.4245 5.494V15.402H15.4957C16.17 15.402 16.7166 15.9486 16.7166 16.6229C16.7166 17.2971 16.17 17.8438 15.4957 17.8438H8.92173C8.24746 17.8438 7.70085 17.2971 7.70085 16.6229C7.70085 16.5994 7.70151 16.576 7.70282 16.5528C7.70162 16.5294 7.70101 16.5057 7.70101 16.482V5.494Z"
+                        fill="#353535" />
                 </svg>
                 <p>LocalBank</p>
             </div>
             <div class="menu">
                 <p onclick="location.href='/limso/MainPage1.html'">추천한끼</p>
-                <p onclick="location.href='/김가현 mypage/meal_posts.html'">한끼밥상</p>
+                <p onclick="location.href='/김가현_mypage/meal_posts.html'">한끼밥상</p>
                 <p onclick="location.href='/정상미/html/upload.html'" class="currentmenu">게시하기</p>
-                <p onclick="location.href='/김가현 mypage/index.html'">내 저금통</p>
+                <p onclick="location.href='/김가현_mypage/index.html'">내 저금통</p>
             </div>
         </nav>
 
         <div id="title">
-            <h1 class="title">다른사람의</h1>
-            <h1 id="green_title">로컬푸드 밥상</h1>
-            <h1 class="title">을 구경해보세요.</h1>
+            <span class="title">다른사람의</span>
+            <span id="green_title">로컬푸드 밥상</span>
+            <span class="title">을 구경해보세요.</span>
         </div>
 
         <section id="meal-container">
@@ -41,46 +47,13 @@
         </section>
 
         <a href="/정상미/html/upload.html" class="noto-sans-kr-bold floating-btn">게시물 올리기
-            <img id="upload_btn_img" src="/김가현 mypage/images/Group 22.png" alt="">
+            <img id="upload_btn_img" src="/김가현_mypage/images/Group 22.png" alt="">
         </a>
     </main>
 
-    <script>
-        const mealPosts = [
-            { "img": "/김가현 mypage/images/소고기 덮밥.png", "name": "소고기 덮밥", "description": "횡성 한우로 만든 소고기 덮밥", "type": "한우", "region": "강원도 횡성" },
-            { "img": "/김가현 mypage/images/김치찌개.png", "name": "김치찌개", "description": "강원도 고랭지 배추로 만든 김치찌개", "type": "배추", "region": "강원도" },
-            { "img": "/김가현 mypage/images/전복죽.png", "name": "전복죽", "description": "완도 전복으로 만든 전복죽", "type": "전복", "region": "전라남도 완도" },
-            { "img": "/김가현 mypage/images/된장국.png", "name": "된장국", "description": "경북 안동 된장으로 끓인 된장국", "type": "된장", "region": "경상북도 안동" },
-            { "img": "/김가현 mypage/images/회덮밥.png", "name": "회덮밥", "description": "제주도 광어로 만든 회덮밥", "type": "광어", "region": "제주도" },
-            { "img": "/김가현 mypage/images/비빔밥.png", "name": "비빔밥", "description": "전주 콩나물로 만든 비빔밥", "type": "콩나물", "region": "전라북도 전주" },
-            { "img": "/김가현 mypage/images/갈비찜.png", "name": "갈비찜", "description": "이천 쌀로 만든 갈비찜", "type": "갈비", "region": "경기도 이천" },
-            { "img": "/김가현 mypage/images/닭볶음탕.png", "name": "닭볶음탕", "description": "철원 오리로 만든 닭볶음탕", "type": "오리", "region": "강원도 철원" },
-            { "img": "/김가현 mypage/images/잡채.png", "name": "잡채", "description": "전남 고구마로 만든 잡채", "type": "고구마", "region": "전라남도 나주" },
-            { "img": "/김가현 mypage/images/청국장.png", "name": "청국장", "description": "청송 콩으로 만든 청국장", "type": "콩", "region": "경상북도 청송" }
-        ];
+    <script src="/김가현_mypage/js/meal_posts.js"></script>
 
-        const mealGrid = document.querySelector('.meal-grid');
-        mealPosts.forEach(post => {
-            const mealCard = `
-                <div class="meal_post">
-                    <div class="image">
-                        <img src="${post.img}" alt="${post.name}">
-                    </div>
-                    <div class="centered-div">
-                        <span class="pork">${post.type}</span>
-                    </div>
-                    <div class="explanation-container">
-                        <span class="explanation">
-                            ${post.region}에서 온,<br><span class="food_name">${post.name}</span>
-                        </span>
-                    </div>
-                </div>
-            `;
-            mealGrid.innerHTML += mealCard;
-        });
-    </script>
 
-    <link rel="stylesheet" href="/김가현 mypage/css/meal.css">
 </body>
 
 </html>
