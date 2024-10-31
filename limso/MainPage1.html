@@ -1,35 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/SW-BankProject/임소영/MainPage.css">
-    <title>MainPage1</title>
-    <style>
-
-    </style>
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="/정상미/css/mainpage.css">
+    <title>MainPage</title>
+    <style></style>
 </head>
+
 <body>
     <!-- 오늘의  추천 밥상-->
+    <nav>
+        <div class="logo">
+            <svg class="localbanklogo" xmlns="http://www.w3.org/2000/svg" width="35" height="42" viewBox="0 0 39 46"
+                fill="none">
+                <path
+                    d="M8.00754 44.2193C7.98391 42.5215 5.96132 39.1453 4.962 38.3178C-0.407034 31.2843 0.673083 27.0183 2.45832 22.8606C6.14555 24.6765 8.96273 25.7044 13.5276 25.3908C20.5167 24.9107 24.5201 18.2715 24.4725 15.7891C24.4344 13.8032 26.6774 12.1515 27.8036 11.5738C28.7077 11.2615 30.6588 10.7401 31.2298 11.1523C31.8009 11.5644 31.6581 12.3856 31.5153 12.7447C30.4494 13.7939 30.5953 16.1795 30.8015 17.2411C33.8851 19.3769 35.4174 22.7211 35.7981 24.1262H37.3685C38.6248 24.2011 38.9706 25.3439 38.9864 25.906V30.5897C39.1387 31.7513 37.9713 32.2915 37.3685 32.4164H35.7981C35.4016 33.8371 33.9898 37.1188 31.5153 38.8799C29.0408 40.641 28.8981 43.6417 29.136 44.9219C29.136 45.8212 28.5015 46.0148 28.1843 45.9991H22.3311C21.3794 45.9991 21.1415 45.281 21.1415 44.9219V43.7978V43.5168C21.1415 43.5168 17.0966 43.6417 16.1924 43.5168V44.9219C16.1924 45.8212 15.3993 46.0148 15.0028 45.9991H9.72066C8.55227 45.9991 8.12586 45.4656 8.01808 44.9833C8.03704 46.3733 8.0268 45.752 8.01469 44.9676C7.9786 44.7956 7.98267 44.6309 8.00754 44.5004C8.00986 44.6531 8.01231 44.8135 8.01469 44.9676C8.01578 44.9729 8.01692 44.9781 8.01808 44.9833C8.01525 44.7756 8.01177 44.523 8.00754 44.2193Z"
+                    fill="#353535" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.6 23.2C18.0065 23.2 23.2 18.0065 23.2 11.6C23.2 5.19349 18.0065 0 11.6 0C5.19349 0 0 5.19349 0 11.6C0 18.0065 5.19349 23.2 11.6 23.2ZM7.70101 5.494C7.70101 4.74192 8.31069 4.13224 9.06277 4.13224C9.81485 4.13224 10.4245 4.74192 10.4245 5.494V15.402H15.4957C16.17 15.402 16.7166 15.9486 16.7166 16.6229C16.7166 17.2971 16.17 17.8438 15.4957 17.8438H8.92173C8.24746 17.8438 7.70085 17.2971 7.70085 16.6229C7.70085 16.5994 7.70151 16.576 7.70282 16.5528C7.70162 16.5294 7.70101 16.5057 7.70101 16.482V5.494Z"
+                    fill="#353535" />
+            </svg>
+            <p>LocalBank</p>
+        </div>
+        <div class="menu">
+            <p onclick="location.href='/limso/MainPage1.html'">추천한끼</p>
+            <p onclick="location.href='/김가현 mypage/meal_posts.html'">한끼밥상</p>
+            <p onclick="location.href='/정상미/html/upload.html'" class="currentmenu">게시하기</p>
+            <p onclick="location.href='/김가현 mypage/index.html'">내 저금통</p>
+        </div>
+    </nav>
     <section>
         <div id="title">
-            <h1 class="main_title" id="main_title">오늘의 추천 로컬푸드 한끼 밥상</h1><br>
-            <h3 class="main_title">로컬 푸드 코인을 가장 많이 받았어요 :</h3>
+            <h1 class="main_title">오늘의 추천 <span class="hightlight-main">로컬푸드</span> 한끼 밥상</h1><br>
+            <h3 class="second_title">로컬 푸드 코인을 가장 많이 받았어요 :</h3>
         </div>
-        <!-- 게시물 3개 -->
-        <section>
-            <!-- 게시물 1개씩 -->
-            <div>
-                
-            </div>
-            <div></div>
-            <div></div>
-        </section>
-    </section>
-    <!-- AI  -->
-    <section></section>
 
-    
-    
+        <!-- 게시물 3개 -->
+        <div class="All">
+
+            <section class="button-group">
+                <div class="image-container">
+                    <div class="post_card">
+                        <img src="/정상미/image/Group26.jpg" alt="">
+                    </div>
+
+                    <div class="post_card">
+                        <img src="/정상미/image/Group8.jpg" alt="">
+                    </div>
+
+                    <div class="post_card">
+                        <img src="/정상미/image/Group5.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="button-wrapper">
+                    <button class="custom-button">
+                        <p>게시물 올리기</p>
+                        <img src="/정상미/image/Group25.jpg" alt="">
+                    </button>
+                </div>
+
+        </div>
+        <!-- <script>
+                const button = document.getElementById('upload-button');
+                const container = document.getElementById('icon-container');
+            
+                button.addEventListener('click', function() {
+                    container.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                            <path d="M19.5 0C20.1465 0 20.7665 0.256808 21.2236 0.713928C21.6807 1.17105 21.9375 1.79103 21.9375 2.4375V17.0625H36.5625C37.209 17.0625 37.829 17.3193 38.2861 17.7764C38.7432 18.2335 39 18.8535 39 19.5C39 20.1465 38.7432 20.7665 38.2861 21.2236C37.829 21.6807 37.209 21.9375 36.5625 21.9375H21.9375V36.5625C21.9375 37.209 21.6807 37.829 21.2236 38.2861C20.7665 38.7432 20.1465 39 19.5 39C18.8535 39 18.2335 38.7432 17.7764 38.2861C17.3193 37.829 17.0625 37.209 17.0625 36.5625V21.9375H2.4375C1.79103 21.9375 1.17105 21.6807 0.713928 21.2236C0.256808 20.7665 0 20.1465 0 19.5C0 18.8535 0.256808 18.2335 0.713928 17.7764C1.17105 17.3193 1.79103 17.0625 2.4375 17.0625H17.0625V2.4375C17.0625 1.79103 17.3193 1.17105 17.7764 0.713928C18.2335 0.256808 18.8535 0 19.5 0Z" fill="black"/>
+                        </svg>
+                    `;
+                }); -->
+
+
+    </section>
+
+    <section>
+        <div class="chch">
+            <img src="/정상미/image/추천한끼-AI 추천.png" alt="">
+        </div>
+    </section>
+    </section>
+
+    <!-- AI  -->
+
+    <!-- <h1 class="secondPage_title" id="main_title"><span class="hightlightSecond-main">가현</span>님의 관심 로컬푸드를 AI가 분석했어요!
+    </h1>
+    <section class="button-group">
+        <div class="image-container">
+        <div class="post_card post_card1">
+            <img src="/SW-BankProject/정상미/image/Group 66.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="post_card">
+            <img src="/SW-BankProject/정상미/image/Group 88.jpg" alt="">
+        </div>
+
+        <div class="post_card">
+            <img src="/SW-BankProject/정상미/image/Group 55.jpg" alt="">
+        </div>
+
+        <div class="button-wrapper">
+            <button class="custom-button custom-button2">
+                <p>게시물 올리기</p>
+                <img src="/SW-BankProject/정상미/image/Group25.jpg" alt="">
+            </button>
+        </div> -->
+
+    <!-- <script>
+            const button = document.getElementById('upload-button');
+            const container = document.getElementById('icon-container');
+        
+            button.addEventListener('click', function() {
+                container.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                        <path d="M19.5 0C20.1465 0 20.7665 0.256808 21.2236 0.713928C21.6807 1.17105 21.9375 1.79103 21.9375 2.4375V17.0625H36.5625C37.209 17.0625 37.829 17.3193 38.2861 17.7764C38.7432 18.2335 39 18.8535 39 19.5C39 20.1465 38.7432 20.7665 38.2861 21.2236C37.829 21.6807 37.209 21.9375 36.5625 21.9375H21.9375V36.5625C21.9375 37.209 21.6807 37.829 21.2236 38.2861C20.7665 38.7432 20.1465 39 19.5 39C18.8535 39 18.2335 38.7432 17.7764 38.2861C17.3193 37.829 17.0625 37.209 17.0625 36.5625V21.9375H2.4375C1.79103 21.9375 1.17105 21.6807 0.713928 21.2236C0.256808 20.7665 0 20.1465 0 19.5C0 18.8535 0.256808 18.2335 0.713928 17.7764C1.17105 17.3193 1.79103 17.0625 2.4375 17.0625H17.0625V2.4375C17.0625 1.79103 17.3193 1.17105 17.7764 0.713928C18.2335 0.256808 18.8535 0 19.5 0Z" fill="black"/>
+                    </svg>
+                `;
+            });
+        </script> -->
+
+    </section>
 </body>
+
 </html>

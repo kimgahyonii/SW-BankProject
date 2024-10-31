@@ -8,7 +8,9 @@
     src: url('/SW-BankProject/font/ReemKufiFun-Regular.ttf') format('truetype');
 }
 
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -23,7 +25,7 @@ nav {
     box-sizing: border-box;
 }
 
-.logo > p {
+.logo>p {
     color: #353535;
     font-family: "ReemKufiFun";
     font-size: 40px;
@@ -50,11 +52,12 @@ svg.localbanklogo {
     justify-content: flex-start;
     align-items: center;
     column-gap: 45px;
-    margin-left: 380px;
+    margin-left: 400px;
+    /* 또는 margin-left: 380px; 필요에 따라 선택 */
     margin-top: -3px;
 }
 
-.menu > p {
+.menu>p {
     color: #353535;
     font-family: "Notosans";
     font-size: 18px;
@@ -62,7 +65,7 @@ svg.localbanklogo {
     letter-spacing: -1.2px;
 }
 
-.menu > p:hover {
+.menu>p:hover {
     color: #F4C53C;
     cursor: pointer;
 }

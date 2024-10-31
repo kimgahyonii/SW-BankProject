@@ -1,0 +1,195 @@
+/* meal.css */
+@font-face {
+    font-family: 'Noto sans KR-R';
+    src: url('/font/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto sans KR-B';
+    src: url('/SW-BankProject/font/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto sans KR-L';
+    src: url('/font/NotoSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ReemKufiFun';
+    src: url('/font/ReemKufiFun-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.menu p {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.currentmenu {
+    font-weight: bold;
+}
+
+#title {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 220px;
+}
+
+#title .title,
+#title #green_title {
+    display: inline;
+    /* font-size: 2.5rem; */
+    font-family: 'Noto sans KR-B';
+    font-weight: 1000;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+}
+
+#green_title {
+    color: #306C1B;
+    font-size: 2.5rem;
+
+}
+
+#meal-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.meal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* 자동으로 줄 바꿈 */
+    gap: 20px;
+    /* 카드 간격 */
+    padding: 20px;
+    max-width: 1200px;
+    /* 최대 너비 */
+    margin: 0 auto;
+    /* 가운데 정렬 */
+}
+
+.meal_post {
+    background: #FAFAFA;
+    border: 1px rgba(0, 0, 0, 0.20) solid;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* 그림자 효과 */
+    /* transition: transform 0.2s; */
+    transform: translateY(-5px);
+    height: 320px;
+    /* 카드 호버 효과 */
+}
+
+.meal_post:hover {
+
+    /* 카드가 떠오르는 효과 */
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+    /* 카드 이미지 높이 조정 */
+    background: linear-gradient(0deg, white 0%, white 100%);
+}
+
+.image img {
+    width: 230px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* 이미지 비율 유지 */
+    border-radius: 15px 15px 0 0;
+    /* 상단 모서리 둥글게 */
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+    width: 30%;
+    /* 전체 너비 */
+    height: 30px;
+    /* 높이 조정 */
+
+    background: #306C1B;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 70px;
+    /* 위치 조정 */
+}
+
+.pork {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.80px;
+    text-align: center;
+}
+
+.explanation-container {
+    margin-top: 60px;
+    padding: 10px;
+    /* 여백 추가 */
+}
+
+.explanation {
+
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    /* 행간 조정 */
+    text-align: center;
+}
+
+.food_name {
+    color: #306C1B;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    /* 행간 조정 */
+    word-wrap: break-word;
+    margin-top: 5px;
+    /* 간격 추가 */
+}
+
+.rotated-box {
+    width: 49.06px;
+    height: 44.01px;
+    position: absolute;
+    left: 355.39px;
+    top: 551.09px;
+    transform: rotate(-180deg);
+    transform-origin: 0 0;
+    border: 1px white solid;
+}
+
+.inner-box {
+    width: 39.87px;
+    height: 19.26px;
+    position: absolute;
+    left: 4.60px;
+    top: 12.38px;
+}
